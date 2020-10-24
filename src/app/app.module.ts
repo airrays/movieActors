@@ -11,6 +11,7 @@ import { DatabaseService } from './database.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ActorToMovieComponent } from './actor-to-movie/actor-to-movie.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { UpdateMovieComponent } from './update-movie/update-movie.component';
 const week10Routes:Routes=[
   {path: '', redirectTo:'/listactors',pathMatch:'full'},
   {path:'addmovie',component:AddMovieComponent},
@@ -18,6 +19,7 @@ const week10Routes:Routes=[
   {path:'listactors',component:ListActorsComponent},
   {path:'listmovies',component:ListMoviesComponent},
   {path:'actor2movie', component:ActorToMovieComponent},
+  {path:'updatemovie', component:UpdateMovieComponent},
   {path:'**', component:PageNotFoundComponent}
 ]
 
@@ -29,7 +31,8 @@ const week10Routes:Routes=[
     ListMoviesComponent,
     DeleteMovieComponent,
     ActorToMovieComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    UpdateMovieComponent
   ],
   imports: [
     BrowserModule,
