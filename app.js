@@ -44,7 +44,7 @@ app.delete('/actors/:id',actors.deleteOne);
 app.delete('/actors/:id/movies/:mId',actors.removeMovie)
 // app.use('/', indexRouter);
 // app.use('/users', usersRouter);
-
+//app.get('');
 //Movie RESTFUl endPoints
 app.get('/movies',movies.getAll);
 app.post('/movies',movies.createOne);
@@ -56,7 +56,7 @@ app.get('/movies/:year1/:year2',movies.getAllYear);
 app.delete('/movies',movies.deleteMovieByYear);
 app.delete('/mocies/year/:aYear',movies.deleteMovieBeforeYear);
 app.post('/movies/:id/actors',movies.addActor);
-
+//
 app.post('/labActor',labActor.createLabActor);
 
 
